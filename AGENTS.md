@@ -11,8 +11,8 @@
 4. privileged
 5. depends_on
 6. user
-7. volumes
-8. ports
+7. ports
+8. volumes
 9. environment
 10. env_file
 11. command
