@@ -1,0 +1,10 @@
+services:
+  natfrp:
+    image: natfrp.com/launcher:latest
+    container_name: natfrp
+    restart: unless-stopped
+    network_mode: "host"
+    volumes:
+      - ./data:/run
+    env_file:
+      - .env
