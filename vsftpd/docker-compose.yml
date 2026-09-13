@@ -1,0 +1,15 @@
+# 2025-08-06T14:10:00+8:00
+
+services:
+  vsftpd:
+    image: fauria/vsftpd:latest
+    container_name: vsftpd
+    restart: unless-stopped
+    volumes:
+      - ./data:/home/vsftpd
+    ports:
+      - 20:20
+      - 21:21
+      - 21100-21110:21100-21110
+    env_file:
+      - .env
