@@ -3,9 +3,9 @@ services:
     image: dockurr/samba:latest
     container_name: samba
     restart: unless-stopped
-    ports:
-      - 445:445
     volumes:
       - ./storage:/storage
+    ports:
+      - 445:445
     env_file:
       - .env

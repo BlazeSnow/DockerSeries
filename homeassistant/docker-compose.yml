@@ -2,8 +2,8 @@ services:
   homeassistant:
     image: homeassistant/home-assistant:stable
     container_name: homeassistant
-    privileged: true
     restart: unless-stopped
+    privileged: true
     network_mode: "host"
     volumes:
       - ./config:/config
