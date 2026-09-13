@@ -1,0 +1,18 @@
+networks:
+  openlist:
+    enable_ipv6: true
+
+services:
+  openlist:
+    image: openlistteam/openlist:latest
+    container_name: openlist
+    restart: unless-stopped
+    user: 0:0
+    volumes:
+      - ./data:/opt/openlist/data
+    networks:
+      - openlist
+    ports:
+      - 5244:5244
+    env_file:
+      - .env
