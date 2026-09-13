@@ -1,4 +1,4 @@
-# frps
+# frpc
 
 - <https://hub.docker.com/r/snowdreamtech/frpc>
 - <https://github.com/snowdreamtech/frp>
