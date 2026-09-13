@@ -14,8 +14,8 @@ services:
     restart: unless-stopped
     depends_on:
       - vaultwarden
-    volumes:
-      - ./Caddyfile:/etc/caddy/Caddyfile:ro
     ports:
       - 80:80
       - 443:443
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro

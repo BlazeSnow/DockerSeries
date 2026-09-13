@@ -8,11 +8,11 @@ services:
     container_name: openlist
     restart: unless-stopped
     user: 0:0
+    ports:
+      - 5244:5244
     volumes:
       - ./data:/opt/openlist/data
     networks:
       - openlist
-    ports:
-      - 5244:5244
     env_file:
       - .env

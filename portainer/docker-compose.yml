@@ -3,11 +3,11 @@ services:
     image: portainer/portainer-ce:alpine
     container_name: portainer
     restart: unless-stopped
-    volumes:
-      - ./data:/data
     ports:
       - 8000:8000
       - 9443:9443
+    volumes:
+      - ./data:/data
     command: -H tcp://agent:9001 --tlsskipverify
 
   agent:
