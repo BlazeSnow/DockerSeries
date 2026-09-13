@@ -1,0 +1,11 @@
+services:
+  kspeeder:
+    image: registry.kspeeder.com/linkease/kspeeder:latest
+    container_name: kspeeder
+    restart: unless-stopped
+    ports:
+      - 5443:5443
+      - 5003:5003
+    volumes:
+      - ./data:/kspeeder-data
+      - ./config:/kspeeder-config
