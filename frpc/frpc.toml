@@ -1,0 +1,10 @@
+serverAddr = "SERVER_IP"
+serverPort = 7000
+auth.token = "PASSWORD"
+
+[[proxies]]
+name = "CustomName"
+type = "tcp"
+localIP = "caddy"
+localPort = 12345
+remotePort = 80

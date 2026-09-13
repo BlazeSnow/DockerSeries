@@ -1,0 +1,5 @@
+:12345 {
+	handle {
+		respond "If you are reading this, congratulations—your frp configuration is complete!"
+	}
+}

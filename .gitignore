@@ -1,0 +1,7 @@
+.env
+
+.agent/
+.vscode/
+.zcode/
+
+data/
