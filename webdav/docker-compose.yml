@@ -1,0 +1,13 @@
+# 2025-08-06T14:18:00+8:00
+
+services:
+  webdav:
+    image: bytemark/webdav:latest
+    container_name: webdav
+    restart: unless-stopped
+    ports:
+      - 80:80
+    volumes:
+      - ./dav:/var/lib/dav
+    env_file:
+      - .env
