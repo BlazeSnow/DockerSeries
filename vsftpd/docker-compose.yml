@@ -1,5 +1,3 @@
-# 2025-08-06T14:10:00+8:00
-
 services:
   vsftpd:
     image: fauria/vsftpd:latest
