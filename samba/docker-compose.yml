@@ -1,0 +1,13 @@
+# 2025-08-06T14:17:00+8:00
+
+services:
+  samba:
+    image: dockurr/samba:latest
+    container_name: samba
+    restart: unless-stopped
+    ports:
+      - 445:445
+    volumes:
+      - ./storage:/storage
+    env_file:
+      - .env
